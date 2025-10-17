@@ -58,11 +58,11 @@ public class Main {
                     break;
 
                 case 5:
-                    System.out.println("👋 Exiting... Goodbye!");
+                    System.out.println(" Exiting... Goodbye!");
                     break;
 
                 default:
-                    System.out.println("❌ Invalid choice. Try again!");
+                    System.out.println("Invalid choice. Try again!");
             }
 
         } while (choice != 5);
