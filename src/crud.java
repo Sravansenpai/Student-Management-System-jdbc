@@ -13,7 +13,7 @@ public class crud {
             stmt.setInt(2, s.getAge());
             stmt.setString(3, s.getGrade());
             stmt.executeUpdate();
-            System.out.println("✅ Student added successfully!");
+            System.out.println("Student added successfully!");
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
@@ -50,9 +50,9 @@ public class crud {
             stmt.setInt(4, id);
             int rows = stmt.executeUpdate();
             if (rows > 0)
-                System.out.println("✅ Student updated successfully!");
+                System.out.println("Student updated successfully!");
             else
-                System.out.println("⚠️ No student found with ID: " + id);
+                System.out.println("No student found with ID: " + id);
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
@@ -65,12 +65,13 @@ public class crud {
             stmt.setInt(1, id);
             int rows = stmt.executeUpdate();
             if (rows > 0)
-                System.out.println("🗑️ Student deleted successfully!");
+                System.out.println("Student deleted successfully!");
             else
-                System.out.println("⚠️ No student found with ID: " + id);
+                System.out.println(" No student found with ID: " + id);
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
     }
 }
+
 
